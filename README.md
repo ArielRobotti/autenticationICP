@@ -1,9 +1,14 @@
 instrucciones:
-
+```
 npm install
-// Para internet Identity local:
+```
+// Para instalar canister internet Identity local:
+```
 dfx deps pull
-dfx deps init
+deps init
 dfx deps deploy
-//////////////////////
+```
+// Deploy local 
+```
 dfx deploy
+```
