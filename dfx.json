@@ -1,13 +1,17 @@
 {
   "canisters": {
-    "template_backend": {
-      "main": "src/template_backend/main.mo",
-      "type": "motoko"
+    "internet_identity": {
+      "type": "pull",
+      "id": "rdmx6-jaaaa-aaaaa-aaadq-cai"
     },
-    "template_frontend": {
-      "dependencies": [
-        "template_backend"
-      ],
+    "backend": {
+      "main": "src/template_backend/main.mo",
+      "type": "motoko",
+      "declarations": {
+        "output": "./src/template_frontend/src/declarations/backend"
+      }
+    },
+    "frontend": {
       "source": [
         "src/template_frontend/dist"
       ],
@@ -22,5 +26,6 @@
     }
   },
   "output_env_file": ".env",
-  "version": 1
+  "version": 1,
+  "dfx": "0.25.1"
 }
